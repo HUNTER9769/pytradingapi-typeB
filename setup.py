@@ -8,8 +8,8 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/MiraeAsset-mStock/pytradingapi-typeB",
-    packages=find_packages(include=["tradingapi_b", "tradingapi_b.*"]),
-    package_dir={"tradingapi_b": "tradingapi_b"},
+    packages=find_packages(),
+    package_dir={'mStock-TradingApi-B': 'tradingapi_b'},
     install_requires=[
         "autobahn", 
         "requests",
@@ -26,6 +26,9 @@ setup(
         "Intended Audience :: Developers",
         "Intended Audience :: Financial and Insurance Industry",
         "Natural Language :: English",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
         "Topic :: Office/Business :: Financial :: Investment",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Software Development :: Libraries"
